@@ -30,8 +30,18 @@ function decendingOrder(n){
 
     /**
      * next, we have to arrange it in decending order
+     * here, we use the sort, function and pass a function in it
+    */
+
+    let sortedInDec = nowArray.sort((a,b)=> b-a);
+
+    /**
+     * next, we convert array back to single int
      */
+
+    return +sortedInDec.join("")
    
 }
 
-decendingOrder(85738263)
+console.log(decendingOrder(85738263))
+
